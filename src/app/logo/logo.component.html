@@ -1,0 +1,49 @@
+<div class="logo">
+	<img src="assets/inter.png" alt="InterSystems DACH" class="inter" />
+	<img src="assets/dach.png" alt="" class="dach" />
+</div>
+
+<style lang="scss">
+	.logo {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		margin-top: -50px;
+		img {
+			width: 400px;
+		}
+	}
+	.inter {
+		width: 100%;
+		animation: move 10s infinite;
+	}
+	.dach {
+		margin-top: -400px;
+		width: 100%;
+		animation: move2 10s infinite;
+	}
+	@keyframes move {
+		0% {
+			transform: translateX(-10px);
+		}
+		50% {
+			transform: translateX(10px);
+		}
+		100% {
+			transform: translateX(-10px);
+		}
+	}
+	@keyframes move2 {
+		0% {
+			transform: translateX(10px);
+		}
+		50% {
+			transform: translateX(-10px);
+		}
+		100% {
+			transform: translateX(10px);
+		}
+	}
+</style>
