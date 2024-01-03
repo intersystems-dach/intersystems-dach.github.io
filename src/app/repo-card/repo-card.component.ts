@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import Repo from '../../types/Repo';
 
 @Component({
 	selector: 'app-repo-card',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 	templateUrl: './repo-card.component.html',
 	styleUrl: './repo-card.component.scss',
 })
-export class RepoCardComponent {}
+export class RepoCardComponent {
+	@Input() repo!: Repo;
+}

@@ -4,6 +4,7 @@ body {
 	background-color: #2e2a94;
 	color: white;
 	font-family: 'Roboto', sans-serif;
+	cursor: url('assets/cursor.png'), auto;
 }
 
 .colContainer {
@@ -12,13 +13,25 @@ body {
 	align-items: center;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-align: center;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
 a {
 	color: white;
+	cursor: url('assets/cursor.png'), auto;
 }
 
 .icon {
 	font-size: 25px;
-	cursor: pointer;
+	cursor: url('assets/cursor.png'), auto;
 	&:hover {
 		scale: 1.1;
 	}

@@ -1,10 +1,14 @@
 <div class="colContainer">
 	<app-logo></app-logo>
 	<h1>Hello from InterSystems DACH 👋</h1>
+	<p>
+		We are the German, Austrian and Swiss InterSystems team. We are here to
+		help you with your InterSystems IRIS and InterSystems IRIS for Health
+		projects.
+	</p>
+	<h2>Our Repositories</h2>
 	@for (repo of getRepos(); track $index) {
-		<li>
-			<a href="{{ repo.url }}" target="_blank">{{ repo.name }}</a>
-		</li>
+		<app-repo-card [repo]="repo"></app-repo-card>
 	}
 	<div class="iconContainer">
 		<a
