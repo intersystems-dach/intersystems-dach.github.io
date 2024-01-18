@@ -1,8 +1,13 @@
-<div class="card">
-	<a href="{{ repo.url }}" target="_blank">{{ repo.name }}</a>
-</div>
+<a href="{{ repo.url }}" target="_blank">
+	<div class="card">
+		{{ repo.name }}
+	</div>
+</a>
 
 <style lang="scss">
+	a {
+		text-decoration: none;
+	}
 	.card {
 		background-color: transparent;
 		border: 3px solid #fff;
@@ -13,9 +18,6 @@
 		font-size: 1.2rem;
 		min-width: 300px;
 		text-align: center;
-		a {
-			text-decoration: none;
-		}
 		&:hover {
 			transform: scale(1.05);
 			box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);

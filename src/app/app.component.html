@@ -7,9 +7,11 @@
 		projects.
 	</p>
 	<h2>Our Repositories</h2>
-	@for (repo of getRepos(); track $index) {
-		<app-repo-card [repo]="repo"></app-repo-card>
-	}
+	<div class="repobox">
+		@for (repo of getRepos(); track $index) {
+			<app-repo-card [repo]="repo"></app-repo-card>
+		}
+	</div>
 	<div class="iconContainer">
 		<a
 			href="https://github.com/intersystems-dach"
